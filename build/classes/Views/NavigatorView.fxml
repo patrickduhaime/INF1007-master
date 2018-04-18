@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" stylesheets="@../Style/bootstrap3.css">
+        <items>
+          <Button mnemonicParsing="false" onAction="#AjoutMembre_Click" style="-fx-border-radius: 0;" text="Ajout Membre" />
+            <Button mnemonicParsing="false" onAction="#Reservation_Click" style="-fx-border-radius: 0;" text="Réservation Véhicule" />
+            <Button mnemonicParsing="false" onAction="#Location_Click" style="-fx-border-radius: 0;" text="Location Véhicule" />
+            <Button mnemonicParsing="false" onAction="#Paiment_Click" style="-fx-border-radius: 0;" text="Effectuer Paiement" />
+        </items>
+      </ToolBar>
+      <Pane fx:id="NavPanel" prefHeight="596.0" prefWidth="777.0" />
+   </children>
+</VBox>

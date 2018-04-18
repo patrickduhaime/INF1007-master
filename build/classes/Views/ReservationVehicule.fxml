@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="590.0" prefWidth="778.0">
+         <children>
+            <TabPane prefHeight="587.0" prefWidth="778.0" side="BOTTOM" styleClass="titled-pane" stylesheets="@../Style/bootstrap3.css" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Formulaire P.Duhaime">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="492.0" prefWidth="778.0" styleClass="danger" stylesheets="@../Style/bootstrap3.css">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-min-width: 777; -fx-padding: 30; -fx-min-height: 550;" styleClass="tab-header-area" stylesheets="@../Style/bootstrap3.css">
+                                 <children>
+                                    <Label text="Réservation véhicule" textFill="#838080">
+                                       <font>
+                                          <Font name="Calibri" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Remplir les informations ci-dessous" textFill="#838080">
+                                       <font>
+                                          <Font name="Calibri" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator opacity="0.71" prefHeight="13.0" prefWidth="700.0" />
+                                    <TitledPane animated="false" prefHeight="129.0" prefWidth="717.0" styleClass="success" stylesheets="@../Style/bootstrap3.css" text="Recherche Client" textFill="#347541">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="101.0" prefWidth="715.0">
+                                             <children>
+                                                <ToolBar prefHeight="42.0" prefWidth="715.0">
+                                                   <items>
+                                                      <Label style="-fx-alignment: center;" text="Nom" textFill="#8d8b8b">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="15.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                      </Label>
+                                                      <TextField id="TxtFldNom" fx:id="TxtFldNom1" stylesheets="@../Style/bootstrap3.css" />
+                                                      <Label style="-fx-alignment: center;" text="No. Permis conduire" textFill="#8d8b8b">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="15.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                      </Label>
+                                                      <TextField id="TxtFldPermisConduire" fx:id="TxtFldNoPermis11" prefHeight="20.0" prefWidth="192.0" stylesheets="@../Style/bootstrap3.css" />
+                                                      <Label style="-fx-alignment: center;" text="  " textFill="#8d8b8b">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="15.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                      </Label>
+                                                      <Button mnemonicParsing="false" styleClass="success" text="Recherche" />
+                                                   </items>
+                                                </ToolBar>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                       <font>
+                                          <Font name="Calibri Bold" size="16.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TitledPane animated="false" styleClass="success" stylesheets="@../Style/bootstrap3.css" text="Choix véhicule" textFill="#347541">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="149.0" prefWidth="715.0">
+                                             <children>
+                                                <ToolBar prefHeight="42.0" prefWidth="715.0">
+                                                   <items>
+                                                      <Label style="-fx-alignment: center;" text="Voiture" textFill="#8d8b8b">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="15.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                      </Label>
+                                                      <TextField id="TxtFldNom" fx:id="TxtFldNom11" stylesheets="@../Style/bootstrap3.css" />
+                                                      <Label style="-fx-alignment: center;" text="  Date réservation  " textFill="#8d8b8b">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="15.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                      </Label>
+                                                      <DatePicker prefHeight="9.0" prefWidth="178.0" />
+                                                      <Label style="-fx-alignment: center;" text="     " textFill="#8d8b8b">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="15.0" />
+                                                         </font>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                      </Label>
+                                                      <Button mnemonicParsing="false" styleClass="success" text="Recherche" />
+                                                   </items>
+                                                </ToolBar>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                       <font>
+                                          <Font name="Calibri Bold" size="16.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </TitledPane>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="split-pane">
+                                       <children>
+                                          <Label style="-fx-alignment: center;" text="Info réservation" textFill="#8d8b8b">
+                                             <font>
+                                                <Font name="Calibri Bold" size="23.0" />
+                                             </font>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-max-height: 60; -fx-spacing: 7; -fx-max-width: 750;">
+                                       <children>
+                                          <Button id="BtCancel" mnemonicParsing="false" onAction="#Cancel_Click" styleClass="danger" text="Annuler" textFill="#868686">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Button>
+                                          <Button id="BtAddMember" mnemonicParsing="false" onAction="#Reserve_Click" prefHeight="32.0" prefWidth="143.0" styleClass="primary" text="Reserver" textFill="#868686">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Liste des réservations P.Duhaime">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-min-width: 777; -fx-padding: 30; -fx-min-height: 550;" styleClass="tab-header-area" stylesheets="@../Style/bootstrap3.css">
+                                 <children>
+                                    <Label text="Liste réservations" textFill="#838080">
+                                       <font>
+                                          <Font name="Calibri" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Remplir les informations ci-dessous" textFill="#838080">
+                                       <font>
+                                          <Font name="Calibri" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator opacity="0.71" prefHeight="13.0" prefWidth="700.0" />
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="split-pane">
+                                       <children>
+                                          <Label style="-fx-alignment: center;" text="Liste reservations" textFill="#8d8b8b">
+                                             <font>
+                                                <Font name="Calibri Bold" size="23.0" />
+                                             </font>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-max-height: 60; -fx-spacing: 7; -fx-max-width: 750;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
